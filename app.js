@@ -1,3 +1,5 @@
+import { CARD_INTERPRETATIONS } from './data/interpretations.js';
+
 const CARD_IMAGE_BASE = './assets/cards/lenormand_cards_optimized_for_repo/assets/cards';
 const CARD_BACK = `${CARD_IMAGE_BASE}/back.png`;
 const DATA_URL = './data/cards.json';
@@ -44,7 +46,8 @@ function bindControls() {
   $('#search').addEventListener('input', (event) => {
     const query = event.target.value.trim().toLowerCase();
     const filtered = cards.filter((card) => {
-      const haystack = [card.name, card.slug, ...(card.keywords || [])].join(' ').toLowerCase();
+      const interpretation = getInterpretation(card).toLowerCase();
+      const haystack = [card.name, card.slug, ...(card.keywords || []), interpretation].join(' ').toLowerCase();
       return haystack.includes(query);
     });
     renderLibrary(filtered);
@@ -65,23 +68,27 @@ function draw(count) {
 
   $('#readingResult').innerHTML = [
     ...selected.map((card, index) => renderCard(card, count === 3 ? ['Situation', 'Challenge', 'Advice'][index] : 'Focus')),
-    `<article class="interpretation"><h3>${escapeHtml(spreadName)}</h3><p><strong>Question:</strong> ${escapeHtml(question)}</p><p>${escapeHtml(interpretation)}</p></article>`
+    `<article class="interpretation"><h3>${escapeHtml(spreadName)}</h3><p><strong>Question:</strong> ${escapeHtml(question)}</p><blockquote class="oracle-text">${escapeHtml(interpretation)}</blockquote></article>`
   ].join('');
 
   saveReading({ spreadName, question, cards: selected, interpretation });
 }
 
+function getInterpretation(card) {
+  return CARD_INTERPRETATIONS[card.id] || card.general || `${card.name} invites reflection through ${keywordPhrase(card)}.`;
+}
+
 function renderCard(card, label = '') {
   const keywords = (card.keywords || []).join(', ');
   const imageSrc = `${CARD_IMAGE_BASE}/${card.image}`;
+  const interpretation = getInterpretation(card);
 
   return `<article class="card">
     <img src="${imageSrc}" alt="${escapeHtml(card.name)} card" loading="lazy" onerror="this.src='${CARD_BACK}'">
     <p class="number">${label ? `${escapeHtml(label)} · ` : ''}Card ${card.id}</p>
     <h3>${escapeHtml(card.name)}</h3>
     <p class="keywords">${escapeHtml(keywords)}</p>
-    ${card.general ? `<p>${escapeHtml(card.general)}</p>` : ''}
-    ${card.reflection_prompt ? `<p><strong>Reflect:</strong> ${escapeHtml(card.reflection_prompt)}</p>` : ''}
+    <blockquote class="oracle-text">${escapeHtml(interpretation)}</blockquote>
   </article>`;
 }
 
@@ -96,26 +103,29 @@ function renderLibrary(list = cards) {
   grid.innerHTML = list.map((card) => {
     const imageSrc = `${CARD_IMAGE_BASE}/${card.image}`;
     const keywords = (card.keywords || []).join(', ');
+    const interpretation = getInterpretation(card);
 
-    return `<article class="card">
+    return `<article class="card library-card">
       <img src="${imageSrc}" alt="${escapeHtml(card.name)} card" loading="lazy" onerror="this.src='${CARD_BACK}'">
       <p class="number">Card ${card.id}</p>
       <h3>${escapeHtml(card.name)}</h3>
       <p class="keywords">${escapeHtml(keywords)}</p>
-      ${card.general ? `<p>${escapeHtml(card.general)}</p>` : ''}
-      ${card.reflection_prompt ? `<p><strong>Reflect:</strong> ${escapeHtml(card.reflection_prompt)}</p>` : ''}
+      <blockquote class="oracle-text">${escapeHtml(interpretation)}</blockquote>
     </article>`;
   }).join('');
 }
 
 function interpret(selected, question) {
   if (selected.length === 1) {
-    const card = selected[0];
-    return `${card.name} brings attention to ${keywordPhrase(card)}. Let this symbol frame the question: ${question}`;
+    return getInterpretation(selected[0]);
   }
 
   const [situation, challenge, advice] = selected;
-  return `The situation is shaped by ${situation.name}: ${keywordPhrase(situation)}. The challenge appears through ${challenge.name}: ${keywordPhrase(challenge)}. The advice is ${advice.name}: work with ${keywordPhrase(advice)} as your next practical step.`;
+  return [
+    `For “${question},” the first card asks you to begin here: ${getInterpretation(situation)}`,
+    `The second card complicates the path: ${getInterpretation(challenge)}`,
+    `The third card offers a way forward: ${getInterpretation(advice)}`
+  ].join(' ');
 }
 
 function keywordPhrase(card) {
@@ -171,10 +181,10 @@ function displayJournal() {
     return `<article class="journal-entry">
       <time datetime="${entry.createdAt}">${new Date(entry.createdAt).toLocaleString()}</time>
       <h3>${escapeHtml(entry.spreadName)}</h3>
-      <div class="cards">${cardImages}</div>
+      <div class="cards journal-card-images">${cardImages}</div>
       <p><strong>Question:</strong> ${escapeHtml(entry.question)}</p>
       <p><strong>Cards:</strong> ${escapeHtml(cardsText)}</p>
-      <p>${escapeHtml(entry.interpretation)}</p>
+      <blockquote class="oracle-text">${escapeHtml(entry.interpretation)}</blockquote>
     </article>`;
   }).join('');
 }
