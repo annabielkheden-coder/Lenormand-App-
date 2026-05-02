@@ -75,7 +75,7 @@ function draw(count) {
 }
 
 function getInterpretation(card) {
-  return CARD_INTERPRETATIONS[card.id] || card.general || `${card.name} invites reflection through ${keywordPhrase(card)}.`;
+  return CARD_INTERPRETATIONS[card.id]?.text || card.general || `${card.name} invites reflection through ${keywordPhrase(card)}.`;
 }
 
 function renderCard(card, label = '') {
