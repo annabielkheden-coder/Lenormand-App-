@@ -1,0 +1,12 @@
+export const CARD_INTERPRETATIONS = {
+  1: 'Does a flicker of movement on the horizon catch your eye? The Rider suggests that news is traveling toward you faster than you might expect. It’s a prompt to ask yourself: are you ready to receive the message, or will you let the moment gallop past?',
+  2: 'Why shouldn\'t things be easy for a change? The Clover reminds you that luck often hides in the simplest of places. It asks you to notice the small, green blessings right at your feet—because sometimes, a tiny spark of joy is all the breakthrough you actually need.',
+  3: 'Where is the wind blowing you today? The Ship speaks of departures and the vast horizons of possibility. It asks if you are brave enough to leave the shore behind, trusting that the journey itself is where your transformation lives.',
+  4: 'What provides you with a sense of safety? The House is your foundation, your roots, and your sanctuary. It invites you to consider if your inner walls are strong enough to protect your peace, yet open enough to let love in.',
+  5: 'How deep do your roots go? The Tree is a symbol of slow, steady growth and enduring health. It asks you to be patient with your own progress, remembering that the tallest branches rely on the quiet strength of what lies beneath the surface.',
+  6: 'Is it a storm passing through, or just a momentary shadow? The Clouds represent the confusion that comes before clarity. They ask you to wait for the wind to shift, reminding you that even the thickest fog eventually reveals a clear path.',
+  7: 'What is twisting beneath the surface? The Snake represents complexity and hidden paths. It invites you to be as wise as you are cautious—sometimes a detour is necessary to avoid a bite you didn\'t see coming.',
+  8: 'What are you finally ready to lay to rest? The Coffin is not an end, but a transformation. It asks you to honor what has finished so that you can clear the space for something new to take its place.',
+  9: 'What if you simply accepted the gift without wondering what it cost? The Bouquet arrives as a reminder of grace. It asks you to see the beauty in your current situation and offer a little of that same kindness back to the world.',
+  10: 'Is it time for a clean break? The Scythe represents the sudden clarity that comes with a sharp cut. It asks you what needs to be harvested now, and what needs to be released quickly to keep you light.'
+};
