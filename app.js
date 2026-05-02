@@ -1,4 +1,5 @@
-const CARD_BACK = "./assets/cards/back.png";
+const CARD_IMAGE_BASE = "./assets/cards/lenormand_cards_optimized_for_repo/assets/cards";
+const CARD_BACK = `${CARD_IMAGE_BASE}/back.png`;
 const DATA_URL = "./data/cards.json";
 const JOURNAL_KEY = "lenormand-oracle-journal-v1";
 
@@ -72,7 +73,7 @@ function draw(count) {
 
 function renderCard(card, label = "") {
   const keywords = (card.keywords || []).join(", ");
-  const imageSrc = `./assets/cards/${card.image}`;
+  const imageSrc = `${CARD_IMAGE_BASE}/${card.image}`;
   return `<article class="card">
     <img src="${imageSrc}" alt="${escapeHtml(card.name)} card" loading="lazy" onerror="this.src='${CARD_BACK}'">
     <p class="number">${label ? `${escapeHtml(label)} · ` : ""}Card ${card.id}</p>
@@ -150,7 +151,7 @@ function shuffle(array) {
 }
 
 function escapeHtml(value) {
-  return String(value ?? "")
+  return String(value ?/ "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
