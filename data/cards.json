@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "name": "Rider",
+    "slug": "rider",
+    "image": "1.png",
+    "keywords": [
+      "news",
+      "arrival",
+      "movement",
+      "message"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 2,
+    "name": "Clover",
+    "slug": "clover",
+    "image": "2.png",
+    "keywords": [
+      "luck",
+      "ease",
+      "small chance",
+      "lightness"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 3,
+    "name": "Ship",
+    "slug": "ship",
+    "image": "3.png",
+    "keywords": [
+      "travel",
+      "distance",
+      "longing",
+      "movement"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 4,
+    "name": "House",
+    "slug": "house",
+    "image": "4.png",
+    "keywords": [
+      "home",
+      "security",
+      "family",
+      "foundation"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 5,
+    "name": "Tree",
+    "slug": "tree",
+    "image": "5.png",
+    "keywords": [
+      "health",
+      "growth",
+      "roots",
+      "time"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 6,
+    "name": "Clouds",
+    "slug": "clouds",
+    "image": "6.png",
+    "keywords": [
+      "confusion",
+      "uncertainty",
+      "mood",
+      "ambiguity"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 7,
+    "name": "Snake",
+    "slug": "snake",
+    "image": "7.png",
+    "keywords": [
+      "complication",
+      "desire",
+      "strategy",
+      "detour"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 8,
+    "name": "Coffin",
+    "slug": "coffin",
+    "image": "8.png",
+    "keywords": [
+      "ending",
+      "closure",
+      "release",
+      "pause"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 9,
+    "name": "Bouquet",
+    "slug": "bouquet",
+    "image": "9.png",
+    "keywords": [
+      "gift",
+      "grace",
+      "invitation",
+      "beauty"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 10,
+    "name": "Scythe",
+    "slug": "scythe",
+    "image": "10.png",
+    "keywords": [
+      "cut",
+      "decision",
+      "suddenness",
+      "separation"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 11,
+    "name": "Whip",
+    "slug": "whip",
+    "image": "11.png",
+    "keywords": [
+      "conflict",
+      "repetition",
+      "tension",
+      "discipline"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 12,
+    "name": "Birds",
+    "slug": "birds",
+    "image": "12.png",
+    "keywords": [
+      "conversation",
+      "anxiety",
+      "messages",
+      "noise"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 13,
+    "name": "Child",
+    "slug": "child",
+    "image": "13.png",
+    "keywords": [
+      "new beginning",
+      "innocence",
+      "smallness",
+      "fresh start"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 14,
+    "name": "Fox",
+    "slug": "fox",
+    "image": "14.png",
+    "keywords": [
+      "caution",
+      "work",
+      "strategy",
+      "self-protection"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 15,
+    "name": "Bear",
+    "slug": "bear",
+    "image": "15.png",
+    "keywords": [
+      "power",
+      "protection",
+      "resources",
+      "authority"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 16,
+    "name": "Stars",
+    "slug": "stars",
+    "image": "16.png",
+    "keywords": [
+      "hope",
+      "guidance",
+      "vision",
+      "inspiration"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 17,
+    "name": "Stork",
+    "slug": "stork",
+    "image": "17.png",
+    "keywords": [
+      "change",
+      "transition",
+      "improvement",
+      "movement"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 18,
+    "name": "Dog",
+    "slug": "dog",
+    "image": "18.png",
+    "keywords": [
+      "loyalty",
+      "friendship",
+      "support",
+      "trust"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 19,
+    "name": "Tower",
+    "slug": "tower",
+    "image": "19.png",
+    "keywords": [
+      "institution",
+      "solitude",
+      "boundaries",
+      "structure"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 20,
+    "name": "Garden",
+    "slug": "garden",
+    "image": "20.png",
+    "keywords": [
+      "community",
+      "visibility",
+      "public life",
+      "network"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 21,
+    "name": "Mountain",
+    "slug": "mountain",
+    "image": "21.png",
+    "keywords": [
+      "obstacle",
+      "delay",
+      "blockage",
+      "distance"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 22,
+    "name": "Crossroads",
+    "slug": "crossroads",
+    "image": "22.png",
+    "keywords": [
+      "choice",
+      "path",
+      "decision",
+      "alternatives"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 23,
+    "name": "Mice",
+    "slug": "mice",
+    "image": "23.png",
+    "keywords": [
+      "loss",
+      "worry",
+      "erosion",
+      "stress"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 24,
+    "name": "Heart",
+    "slug": "heart",
+    "image": "24.png",
+    "keywords": [
+      "love",
+      "care",
+      "feeling",
+      "attachment"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 25,
+    "name": "Ring",
+    "slug": "ring",
+    "image": "25.png",
+    "keywords": [
+      "commitment",
+      "cycle",
+      "contract",
+      "bond"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 26,
+    "name": "Book",
+    "slug": "book",
+    "image": "26.png",
+    "keywords": [
+      "secret",
+      "knowledge",
+      "study",
+      "hidden information"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 27,
+    "name": "Letter",
+    "slug": "letter",
+    "image": "27.png",
+    "keywords": [
+      "document",
+      "message",
+      "written word",
+      "notice"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 28,
+    "name": "Man",
+    "slug": "man",
+    "image": "28.png",
+    "keywords": [
+      "masculine figure",
+      "querent",
+      "partner",
+      "person"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 29,
+    "name": "Woman",
+    "slug": "woman",
+    "image": "29.png",
+    "keywords": [
+      "feminine figure",
+      "querent",
+      "partner",
+      "person"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 30,
+    "name": "Lily",
+    "slug": "lily",
+    "image": "30.png",
+    "keywords": [
+      "maturity",
+      "peace",
+      "wisdom",
+      "sensuality"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 31,
+    "name": "Sun",
+    "slug": "sun",
+    "image": "31.png",
+    "keywords": [
+      "success",
+      "clarity",
+      "vitality",
+      "confidence"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 32,
+    "name": "Moon",
+    "slug": "moon",
+    "image": "32.png",
+    "keywords": [
+      "recognition",
+      "intuition",
+      "dreams",
+      "emotion"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 33,
+    "name": "Key",
+    "slug": "key",
+    "image": "33.png",
+    "keywords": [
+      "solution",
+      "opening",
+      "answer",
+      "breakthrough"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 34,
+    "name": "Fish",
+    "slug": "fish",
+    "image": "34.png",
+    "keywords": [
+      "money",
+      "flow",
+      "commerce",
+      "abundance"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 35,
+    "name": "Anchor",
+    "slug": "anchor",
+    "image": "35.png",
+    "keywords": [
+      "stability",
+      "work",
+      "persistence",
+      "security"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  },
+  {
+    "id": 36,
+    "name": "Cross",
+    "slug": "cross",
+    "image": "36.png",
+    "keywords": [
+      "burden",
+      "fate",
+      "faith",
+      "trial"
+    ],
+    "general": "",
+    "love": "",
+    "career": "",
+    "shadow": "",
+    "reflection_prompt": ""
+  }
+]
