@@ -6,6 +6,34 @@
   <title>Lenormand Oracle</title>
   <meta name="description" content="A plain HTML, CSS, and JavaScript Lenormand card reading app.">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+
+    .oracle-text {
+      margin: 14px 0 0;
+      padding: 14px 16px;
+      border-left: 3px solid var(--accent);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .055);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.06rem;
+      font-style: italic;
+      line-height: 1.65;
+    }
+    .library-card .oracle-text,
+    .card .oracle-text {
+      font-size: 1rem;
+    }
+    .journal-card-images {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 95px));
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .journal-card-images img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -33,7 +61,7 @@
 
     <section id="library" class="panel">
       <label for="search">Search cards</label>
-      <input id="search" placeholder="Search by name or keyword">
+      <input id="search" placeholder="Search by name, keyword, or interpretation">
       <div id="libraryGrid" class="cards"></div>
     </section>
 
@@ -49,6 +77,6 @@
     <p>Static app. No API keys or backend required.</p>
   </footer>
 
-  <script src="./app.js" defer></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
