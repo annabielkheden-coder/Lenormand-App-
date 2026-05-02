@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenormand Oracle</title>
+  <meta name="description" content="A plain HTML, CSS, and JavaScript Lenormand card reading app.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Lenormand Oracle</p>
+    <h1>Draw a card. Read the pattern. Save the insight.</h1>
+    <p>A static, mobile-friendly Lenormand app prepared for Vercel deployment.</p>
+  </header>
+
+  <main>
+    <nav class="tabs" aria-label="App sections">
+      <button data-tab="reading" class="active">Reading</button>
+      <button data-tab="library">Library</button>
+      <button data-tab="journal">Journal</button>
+    </nav>
+
+    <section id="reading" class="panel active">
+      <label for="question">Question or focus</label>
+      <input id="question" placeholder="What should I know right now?">
+      <div class="actions">
+        <button id="drawOne">One-card draw</button>
+        <button id="drawThree">Three-card reading</button>
+      </div>
+      <div id="readingResult" class="cards"></div>
+    </section>
+
+    <section id="library" class="panel">
+      <label for="search">Search cards</label>
+      <input id="search" placeholder="Search by name or keyword">
+      <div id="libraryGrid" class="cards"></div>
+    </section>
+
+    <section id="journal" class="panel">
+      <div class="actions">
+        <button id="clearJournal" class="secondary">Clear journal</button>
+      </div>
+      <div id="journalList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Static app. No API keys or backend required.</p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
